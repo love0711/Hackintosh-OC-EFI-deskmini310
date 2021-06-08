@@ -6,8 +6,6 @@ EFI for opencore: 0.6.9 & os: macOS Big Sur(11.3.1)
 
 ## Hardware
 
----
-
 - MODEL: ASRocks DeskMini 310
 
 - CPU: Intel Coffee Lake i5-9400
@@ -21,8 +19,6 @@ EFI for opencore: 0.6.9 & os: macOS Big Sur(11.3.1)
 - CPU cooler: NOCTUA NH L9i
 
 ## BIOS
-
----
 
 - Onboard HD Audio & Onboard HDMI HD Audio: Enabled
 
@@ -40,8 +36,6 @@ EFI for opencore: 0.6.9 & os: macOS Big Sur(11.3.1)
 
 ## Checklist
 
----
-
 - [x] Ethernet
 
 - [x] WIFI/Bluetooth/Airdrop
@@ -53,3 +47,15 @@ EFI for opencore: 0.6.9 & os: macOS Big Sur(11.3.1)
 - [x] DP/HDMI dual monitor output
 
 - [x] Graphics(Intel UHD 630)
+
+### 2021/06/08 update fix sleep
+
+macOS system parameter
+
+```sh
+sudo pmset autopoweroff 0
+sudo pmset powernap 0
+sudo pmset standby 0
+sudo pmset proximitywake 0
+sudo pmset tcpkeepalive 0
+```
